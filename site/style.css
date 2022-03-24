@@ -1,0 +1,42 @@
+body {
+	background-color: #267A33;
+}	
+
+header {
+	overflow: hidden;
+	background-color: #26337A;
+	padding: 15px 20px;
+}
+input[type=checkbox] {
+	-webkit-appearance: none;
+	visibility: hidden;
+	display: none;
+
+}
+.check {
+	position: relative;
+	display: block;
+	width: 40px;
+	height: 20px;
+	background: #092c3e;
+	cursor: pointer;
+}
+
+
+.main-header a {
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 13px;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 25px;
+	border-radius: 4px;
+}
+
+.Div1 {
+	height: 100%;
+	width: 50%;
+	background-color: blueviolet;
+}
+
