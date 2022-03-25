@@ -16,6 +16,7 @@
 
 :root {
 	--primary-color: #edf2fc;
+	--primaryPlaceholder-color: rgba(20, 20, 20, 0.65);
 	--secondary-color:  #212121;
 	--secondaryDIV-color:  white;
 	--primaryHeader-color: rgba(255, 255, 255, 0.85);
@@ -23,10 +24,17 @@
 
 }
 .dark-theme{
+	--primaryPlaceholder-color: rgba(240, 240, 240, 0.65);
 	--primaryHeader-color: rgba(2, 48, 81, 0.85);
 	--primary-color: #023047;
 	--secondaryDIV-color: #023047;
 	--secondary-color:  #fff;
+}
+
+::placeholder{
+	color: var(--primaryPlaceholder-color);
+  	transition: all 0.2s ease-in-out;
+
 }
 
 
@@ -235,6 +243,7 @@ input[type=password]:focus{
 	position: absolute;
 	left: 30px;
 	bottom: 90px;
+   transition: all 0.2s ease-in-out;
 }
 input[type=checkbox]{
 	cursor: pointer;
