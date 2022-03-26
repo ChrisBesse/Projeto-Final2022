@@ -114,7 +114,7 @@ nav ul li a:hover {
 
 /*Left IMG DIV*/
 .leftImg {
-	height: 600px;
+	height: 620px;
 	width: 277px;
 	position: absolute;
 	color: white;
@@ -122,14 +122,14 @@ nav ul li a:hover {
 	font-size: 20px;
 	top: 0%;
 	left: 50%;
-	transform: translate(-133%, 17%);
+	transform: translate(-133%, 16%);
   transition: all 0.2s ease-in-out;
 
 }
 .leftImg img {
 	border-radius: 10px 0px 0px 10px;
 	position: absolute;
-	height: 600px;
+	height: 620px;
 	width: 277px;
 }
 .leftImg h1 {
@@ -178,7 +178,7 @@ nav ul li a:hover {
 	border-top-style: groove;
 	border-bottom-style: groove;
 	border-color: var(--primary-color);
-	height: 598px;
+	height: 616px;
 	width: 450px;
 	position: absolute;
 	color: var(--secondary-color);
@@ -187,7 +187,7 @@ nav ul li a:hover {
 	font-size: 17px;
 	top: 0%;
 	left: 50%;
-	transform: translate(-20%, 17%);
+	transform: translate(-20%, 16%);
   transition: all 0.2s ease-in-out;
 
 }
@@ -233,7 +233,7 @@ input[type=date]{
 	font-size: 15px;
 	background: var(--primaryHeader-color);
 	outline: none;
-	padding: 12px 20px;
+	padding: 12px 15px;
 	margin: 8px auto;
 	border-style: groove;
 	box-sizing: border-box;
