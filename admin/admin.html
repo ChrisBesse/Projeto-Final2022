@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TeaBank - Sobre</title>
+
+    <!-- Title icon -->
+	  <link rel="shortcut icon" type="image/x-icon" href="../img/logo.ico">
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="admin.css" />
+
+    <script src="admin.js" defer></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-container">
+        <a href="../index.html" class="logo-div">
+          <img src="../img/logoWhite.png" alt="" />
+        </a>
+
+        <nav class="header-nav">
+          <ul>
+            <li><a href="../account.html">Sua Conta</a></li>
+            <li><a href="../index.html">Home Page</a></li>
+            <li><a href="../signup.html">Cadastre-se</a></li>
+            <li><a href="../login.html">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="main-section">
+
+      <div class="contas-do-database">
+        <h1>Account Database</h1>
+
+        <div class="search-accounts">
+          <div>
+            <p>Pesquisar: </p>
+            <input type="search" id="search-input">
+          </div>
+          <button class="btn btn-admin" id="add-btn">Adicionar</button>
+        </div>
+
+        <table class="table-class">
+          <thead>
+            <tr>
+              <td>Nome</td>
+              <td>E-mail</td>
+              <td>CPF</td>
+              <td>Ação</td>
+            </tr>
+          </thead>
+          <tbody id="tbody">
+            <tr class="tr-class">
+              <td id="nome1">Christiano</td>
+              <td id="email1">chris@gmail.com</td>
+              <td id="numero1">123.456.789-01</td>
+              <td>
+                <img id="edit" src="../img/admin-icons/edit.PNG" alt=""class="action-img">
+                <img id="eye" src="../img/admin-icons/eye.PNG" alt=""class="action-img">
+                <img id="trash" src="../img/admin-icons/trash.PNG" alt=""class="action-img trash">
+              </td>
+            </tr>
+
+            <tr class="tr-class">
+              <td id="nome2">Daniel</td>
+              <td id="email2">dani@gmail.com</td>
+              <td id="numero2">222.444.666-77</td>
+              <td>
+                <img id="edit" src="../img/admin-icons/edit.PNG" alt=""class="action-img">
+                <img id="eye" src="../img/admin-icons/eye.PNG" alt=""class="action-img">
+                <img id="trash" src="../img/admin-icons/trash.PNG" alt=""class="action-img trash">
+              </td>
+            </tr>
+
+            <tr class="tr-class">
+              <td id="nome3">John</td>
+              <td id="email3">johnnn@gmail.com</td>
+              <td id="numero3">192.938.746-65</td>
+              <td>
+                <img id="edit" src="../img/admin-icons/edit.PNG" alt="" class="action-img">
+                <img id="eye" src="../img/admin-icons/eye.PNG" alt="" class="action-img">
+                <img id="trash" src="../img/admin-icons/trash.PNG" alt="" class="action-img trash">
+              </td>
+            </tr>
+
+            <tr class="tr-class">
+              <td id="nome3">Julyette</td>
+              <td id="email3">july@gmail.com</td>
+              <td id="numero3">098.765.543-21</td>
+              <td>
+                <img id="edit" src="../img/admin-icons/edit.PNG" alt="" class="action-img">
+                <img id="eye" src="../img/admin-icons/eye.PNG" alt="" class="action-img">
+                <img id="trash" src="../img/admin-icons/trash.PNG" alt="" class="action-img trash">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="cancel-account">
+          <button id="btn-cancel" class="btn btn-admin" style="background-color: red;">Cancelar</button>
+        </div>
+      </div>
+
+    </section>
+
+
+    <div class="popup">
+      <div class="add cards">
+        <h3>Adicionar</h3>
+
+        <form class="info first-info">
+          <div class="info-inputs-div">
+            <label for="add-nome">Nome: </label>
+            <input type="text" id="add-nome" class="add-input user-info" />
+          </div>
+
+          <div class="info-inputs-div">
+            <label for="username">Sobrenome: </label>
+            <input type="text" id="sobrenome" class="user-info" />
+          </div>
+
+        <div class="info-inputs-div">
+          <label for="username">Username: </label>
+          <input type="text" id="username" class="user-info" />
+        </div>
+
+        <div class="info-inputs-div">
+          <label for="add-email">E-mail: </label>
+          <input type="text" id="add-email" class="add-input user-info" />
+        </div>
+
+        <div class="info-inputs-div">
+          <label for="add-cpf">CPF: </label>
+          <input type="text" id="add-cpf" class="add-input user-info" />
+        </div>
+
+        <div class="info-inputs-div">
+          <label for="username">Data de Nascimento: </label>
+          <input type="text" id="ddn" class="user-info" />
+        </div>
+
+        <div class="info-inputs-div">
+          <label for="username">Senha: </label>
+          <input type="password" id="senha" class="user-info" />
+          <span class="btn show-pass-btn">Mostrar Senha</span>
+        </div>
+
+        <div class="edit-select-btn1">
+          <button type="submit" class="btn account-edit-submit-btn" id="adicionarBtn">Adicionar</button>
+      </div>
+      </form>
+
+      <button class="btn btn-close">Fechar</button>
+      </div>
+
+      <div class="eye cards">
+        <h3>Ver Usuario</h3>
+
+        <form class="info first-info">
+          <div class="info-inputs-div">
+            <label for="username">Nome: </label>
+            <input type="text" id="nome" class="user-info" />
+          </div>
+
+          <div class="info-inputs-div">
+            <label for="username">Sobrenome: </label>
+            <input type="text" id="sobrenome" class="user-info" />
+          </div>
+
+        <div class="info-inputs-div">
+          <label for="username">Username: </label>
+          <input type="text" id="username" class="user-info" readonly/>
+        </div>
+
+        <div class="info-inputs-div">
+          <label for="username">E-mail: </label>
+          <input type="text" id="email" class="user-info" readonly/>
+        </div>
+
+        <div class="info-inputs-div">
+          <label for="username">CPF: </label>
+          <input type="text" id="cpf" class="user-info" readonly/>
+        </div>
+
+        <div class="info-inputs-div">
+          <label for="username">Data de Nascimento: </label>
+          <input type="text" id="ddn" class="user-info" readonly/>
+        </div>
+
+        <div class="info-inputs-div">
+          <label for="username">Senha: </label>
+          <input type="password" id="senha" class="user-info" readonly/>
+          <span class="btn show-pass-btn">Mostrar Senha</span>
+        </div>
+      </form>
+      <button class="btn btn-close">Fechar</button>
+
+      </div>
+
+      <div class="edit cards">
+        <h3>Editar</h3>
+        <form class="info first-info">
+          <div class="info-inputs-div">
+            <label for="username">Nome: </label>
+            <input type="text" id="nome" class="user-info" />
+          </div>
+
+          <div class="info-inputs-div">
+            <label for="username">Sobrenome: </label>
+            <input type="text" id="sobrenome" class="user-info" />
+          </div>
+
+        <div class="info-inputs-div">
+          <label for="username">Username: </label>
+          <input type="text" id="username" class="user-info" />
+        </div>
+
+        <div class="info-inputs-div">
+          <label for="username">E-mail: </label>
+          <input type="text" id="email" class="user-info" />
+        </div>
+
+        <div class="info-inputs-div">
+          <label for="username">CPF: </label>
+          <input type="text" id="cpf" class="user-info" />
+        </div>
+
+        <div class="info-inputs-div">
+          <label for="username">Data de Nascimento: </label>
+          <input type="text" id="ddn" class="user-info" />
+        </div>
+
+        <div class="info-inputs-div">
+          <label for="username">Senha: </label>
+          <input type="password" id="senha" class="user-info" />
+          <span class="btn show-pass-btn">Mostrar Senha</span>
+        </div>
+
+        <div class="edit-select-btn1">
+            <button type="submit" class="btn account-edit-submit-btn">Atualizar</button>
+            <button type="button" class="btn account-edit-exit-btn">Cancelar</button>
+        </div>
+      </form>
+      <button class="btn btn-close">Fechar</button>
+
+      </div>
+    </div>
+
+    <footer class="main-footer">
+      <ul>
+        <li><a href="../about.html">Sobre</a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li>&copy;TeaBank 2022</li>
+      </ul>
+    </footer>
+  </body>
+</html>

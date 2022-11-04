@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TeaBank - Cadastro</title>
+
+    <!-- Title icon -->
+	  <link rel="shortcut icon" type="image/x-icon" href="img/logo.ico">
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/signup.css" />
+
+    <script src="js/signup.js" defer></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-container">
+        <a href="index.html" class="logo-div">
+          <img src="img/logoWhite.png" alt="" />
+        </a>
+
+        <nav class="header-nav">
+          <ul>
+            <li><a href="account.html">Sua Conta</a></li>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="signup.html">Cadastre-se</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="main-section">
+      <div class="title-div">
+        <h1>Cadastre-se no <span class="accent-text">TeaBank</span></h1>
+        <p>Crie uma conta conosco para explorar as incriveis possibilidades de banking online.</p>
+      </div>
+
+      <form class="main-form signup-form">
+        <div class="separator">
+          <div class="input-div">
+            <label for="nome">Nome:</label>
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              class="user-input"
+              required
+              maxlength="40"
+            />
+          </div>
+
+          <div class="input-div">
+            <label for="sobrenome">Sobrenome:</label>
+            <input
+              type="text"
+              name="sobrenome"
+              id="sobrenome"
+              class="user-input"
+              required
+              maxlength="40"
+            />
+          </div>
+
+          <div class="input-div">
+            <label for="username">Username:</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              class="user-input"
+              required
+              maxlength="40"
+            />
+          </div>
+
+          <div class="input-div">
+            <label for="cpf">CPF:</label>
+            <input
+              type="text"
+              name="cpf"
+              id="cpf"
+              class="user-input"
+              required
+              maxlength="15"
+            />
+          </div>
+        </div>
+
+        <div class="separator">
+          <div class="input-div">
+            <label for="ddn">Data de Nascimento::</label>
+            <input
+              type="date"
+              name="ddn"
+              id="ddn"
+              class="user-input"
+              required
+              min="1997-01-01"
+              max="2016-12-31"
+            />
+          </div>
+
+          <div class="input-div">
+            <label for="email">E-mail:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="user-input"
+              required
+            />
+          </div>
+
+          <div class="input-div">
+            <label for="senha">Senha:</label>
+            <input
+              type="password"
+              name="senha"
+              id="senha"
+              class="user-input"
+              required
+              maxlength="30"
+              minlength="9"
+            />
+          </div>
+
+          <div class="input-btns">
+            <button type="submit" class="btn submit-btn">Cadastre-se</button>
+
+            <p class="accent-text-gray">ou</p>
+
+            <a href="login.html" class="form-anchor">Faça Login</a>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <footer class="main-footer">
+      <ul>
+        <li><a href="about.html">Sobre</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li>&copy;TeaBank 2022</li>
+      </ul>
+    </footer>
+  </body>
+</html>

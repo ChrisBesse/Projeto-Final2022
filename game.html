@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tea Monopoly - TeaBank</title>
+
+    <!-- Title icon -->
+	  <link rel="shortcut icon" type="image/x-icon" href="img/logo.ico">
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/game.css" />
+
+    <!-- <script src="js/index.js" defer></script> -->
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-container">
+        <a href="index.html" class="logo-div">
+          <img src="img/logoWhite.png" alt="" />
+        </a>
+
+        <nav class="header-nav">
+          <ul>
+            <li><a href="account.html">Sua Conta</a></li>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="signup.html">Cadastre-se</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="main-sec" class="game">
+        <div class="game__text">
+          <h1 class="accent-text">Tea Monopoly</h1>
+        </div>
+  
+        <button
+        class="btn btn-game">Jogar</button>
+  
+      </section>
+
+      <section class="game game--screen" style="display: none;">
+        <div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe title="Tea MONOPOLY" frameborder="0" width="1200" height="675" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/63483eddee95e70013f5a7e2" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+      </section>
+
+    <footer class="main-footer">
+      <ul>
+        <li><a href="about.html">Sobre</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li>&copy;TeaBank 2022</li>
+      </ul>
+    </footer>
+
+    <script>
+        const startBtn = document.querySelector(".btn-game");
+        const mainScreen = document.querySelector("#main-sec");
+        const gameScreen = document.querySelector(".game--screen");
+
+        startBtn.addEventListener("click", (e) => {
+            mainScreen.style.display = "none";
+
+            gameScreen.style.display = "block";
+        });
+    </script>
+  </body>
+</html>

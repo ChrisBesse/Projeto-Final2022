@@ -1,0 +1,173 @@
+.main-home-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 130px);
+  width: 100%;
+  padding: 0 1rem;
+}
+
+/* Teacup img styles */
+
+.left-img-div .teacup-img {
+  min-height: 400px;
+  width: 43vw;
+  max-width: 400px;
+
+  background-image: url(../img/teacup.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/* first section text styles */
+
+.main-home-text .title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.main-home-text .subtitle {
+  margin-bottom: 4rem;
+}
+
+
+/* Background circles style */
+.bg-circle {
+  position: absolute;
+  z-index: -1;
+  
+}
+
+.circle1 {
+  top: 20%;
+  left: 10%;
+  border-radius: 50%;
+
+  background: rgba(0, 255, 26, 0.10);
+
+  width: 15vw;
+  aspect-ratio: 1;
+}
+.circle2 {
+  top: 60%;
+  left: -50px;
+
+  overflow: hidden;
+  
+}
+.circle2::after {
+  content: '';
+  display: block;
+  
+  transform: translateX(-10%);
+  
+  border-radius: 50%;
+  
+  background: rgba(0, 255, 26, 0.10);
+
+  width: 25vw;
+  aspect-ratio: 1;
+}
+
+.circle3 {
+  top: 40%;
+  right: 0;
+  border-radius: 0;
+
+  overflow: hidden;
+
+  
+}
+.circle3::after {
+  content: '';
+  display: block;
+  
+  transform: translateX(30%);
+  
+  border-radius: 50%;
+  
+  background: rgba(0, 21, 214,  0.10);
+
+  width: 20vw;
+  aspect-ratio: 1;
+}
+
+/* Promotional Video Section */
+
+.promo-video-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 2rem;
+  margin: 4rem 0;
+}
+.promo-video-section h2 {
+  margin-right: 5rem;
+  font-size: 2rem;
+}
+.promo-video-section iframe {
+  width: 560px;
+  height: 315px;
+}
+  
+@media (max-width: 850px) {
+  .promo-video-section {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .promo-video-section h2  {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+  .promo-video-section iframe {
+    width: 100%;
+    max-width: 560px;
+    aspect-ratio: 1;
+  }
+}
+
+/* Third section */
+
+.second-home-section {
+  text-align: center;
+  min-height: calc(100vh - 280px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-home-section h2 {
+  max-width: 400px;
+}
+
+.home-links-div {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-links-div > * {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 570px) {
+  .left-img-div {
+    display: none;
+  }
+
+  .main-home-text {
+    text-align: center;
+  }
+
+  .main-home-text .title {
+    font-size: 1.5rem;
+  }
+}

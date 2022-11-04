@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TeaBank - Sua Conta</title>
+
+    <!-- Title icon -->
+	  <link rel="shortcut icon" type="image/x-icon" href="img/logo.ico">
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/account.css" />
+
+    <script src="js/account.js" defer></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-container">
+        <a href="index.html" class="logo-div">
+          <img src="img/logoWhite.png" alt="" />
+        </a>
+
+        <nav class="header-nav">
+          <ul>
+            <li><a href="account.html">Sua Conta</a></li>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="signup.html">Cadastre-se</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-class">
+      
+    <div class="btn-mobile-sidebar">
+      <img src="img/down-arrow-light.svg" alt="">
+    </div>
+    <aside class="account-aside-menu">
+      <div class="sidebar-logo">
+        <h1>TeaBank</h1>
+      </div>
+        <div class="content-aside">
+          <div>
+            <p class="sidebar-separator">Sua Conta</p>
+
+            <p class="sidebar-link">Perfil</p>
+            <p class="sidebar-link">Configuração de conta</p>
+            <p class="sidebar-link">Seu Saldo</p>
+          </div>
+
+          <div>
+            <p class="sidebar-separator">Gestão de Transferências</p>
+
+            <p class="sidebar-link">Transferências de banco</p>
+            <p class="sidebar-link">Histórico de Transferências</p>
+          </div>
+
+          <div>
+            <p class="sidebar-separator">Gestão de Empréstimos</p>
+
+            <p class="sidebar-link">Novo Empréstimos</p>
+            <p class="sidebar-link">Histórico de Empréstimos</p>
+          </div>
+
+          <div>
+            <p class="sidebar-separator">Gestão de Pagamentos</p>
+
+            <p class="sidebar-link">Histórico de Pagamentos</p>
+          </div>
+
+          <div>
+            <p class="sidebar-separator">Gestão de Investimentos</p>
+
+            <p class="sidebar-link">Novo Investimento</p>
+            <p class="sidebar-link">Histórico de Investimentos</p>
+          </div>
+
+          <div>
+            <p class="sidebar-separator">Contatos</p>
+
+            <p class="sidebar-link">Menssagens</p>
+            <p class="sidebar-link">Meus Contatos</p>
+          </div>
+
+
+        </div>
+    </aside>
+
+    <section class="main-section your-account-section">
+      <div class="img-section">
+        <img src="img/placeholder200.png" alt="" id="user-img-id"/>
+        <div class="img-edit-div">
+            <label for="edit-img"><img src="img/camerapng.png" alt="" class="camera-png-icon"></label>
+            <input type="file" id="edit-img" accept=".png, .jpeg, .jpg" >
+        </div>
+      </div>
+
+      <div class="info-section">
+        <form class="info first-info">
+            <div id="edit-first-info" class="info-edit-div">
+                <p class="edit-info-btn edit-info-btn1">Edit</p>
+            </div>
+
+          <div class="info-inputs-div nome-sobrenome">
+            <input type="text" id="nomesobre-id" readonly/>
+          </div>
+
+          <div class="info-inputs-div">
+            <label for="username">Username: </label>
+            <input type="text" id="username" class="user-info" readonly/>
+          </div>
+
+          <div class="info-inputs-div">
+            <label for="username">E-mail: </label>
+            <input type="text" id="email" class="user-info" readonly/>
+          </div>
+
+          <div class="info-inputs-div">
+            <label for="username">CPF: </label>
+            <input type="text" id="cpf" class="user-info" readonly/>
+          </div>
+
+          <div class="info-inputs-div">
+            <label for="username">Data de Nascimento: </label>
+            <input type="text" id="ddn" class="user-info" readonly/>
+          </div>
+
+          <div class="info-inputs-div">
+            <label for="username">Senha: </label>
+            <input type="password" id="senha" class="user-info" readonly/>
+            <span class="btn show-pass-btn">Mostrar Senha</span>
+          </div>
+
+          <div class="edit-select-btn1">
+              <button type="submit" class="btn account-edit-submit-btn">Salvar</button>
+              <button type="button" class="btn account-edit-exit-btn">Cancelar</button>
+          </div>
+        </form>
+
+
+        <form class="info second-info">
+            <div id="edit-second-info" class="info-edit-div">
+                <p class="edit-info-btn edit-info-btn2">Edit</p>
+            </div>
+
+          <div class="info-inputs-div">
+            <label for="telefone">Telefone: </label>
+            <input type="text" id="telefone" class="user-info2" readonly/>
+          </div>
+
+          <div class="info-inputs-div textarea-inputs">
+            <label for="bio">Bio: </label>
+            <textarea id="bio" class="user-info2" readonly/></textarea>
+          </div>
+
+          <div class="info-inputs-div">
+            <label for="pais">Pais: </label>
+            <input type="text" id="pais" class="user-info2" readonly/>
+          </div>
+
+          <div class="info-inputs-div">
+            <label for="bairro">Bairro: </label>
+            <input type="text" id="bairro" class="user-info2" readonly/>
+          </div>
+
+          <div class="info-inputs-div textarea-inputs">
+            <label for="endereco">Endereço: </label>
+            <textarea id="endereco" class="user-info2" readonly/></textarea>
+          </div>
+
+          <div class="edit-select-btn2">
+            <button type="submit" class="btn account-edit-submit-btn2">Salvar</button>
+            <button type="button" class="btn account-edit-exit-btn2">Cancelar</button>
+            </div>
+          </form>
+
+
+          <div class="delete-account-section">
+            <h3>Apagar Minha Conta</h3>
+
+            <button type="button" class="btn btn-delete-accont">Deletar Minha Conta</button>
+          </div>
+      </div>
+
+    </section>
+
+
+    </main>
+
+    <footer class="main-footer">
+      <ul>
+        <li><a href="about.html">Sobre</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li>&copy;TeaBank 2022</li>
+      </ul>
+    </footer>
+  </body>
+</html>
